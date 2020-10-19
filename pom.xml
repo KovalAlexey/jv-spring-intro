@@ -4,11 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>mate.academy</groupId>
-    <artifactId>JavaSpring</artifactId>
+    <groupId>spring.intro</groupId>
+    <artifactId>jv-spring-intro</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-
     <properties>
         <jdk.version>11</jdk.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -50,7 +49,6 @@
             <version>8.0.21</version>
         </dependency>
     </dependencies>
-
     <build>
         <plugins>
             <plugin>
@@ -89,5 +87,4 @@
             </plugins>
         </pluginManagement>
     </build>
-
 </project>
