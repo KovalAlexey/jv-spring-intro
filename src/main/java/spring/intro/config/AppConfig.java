@@ -30,11 +30,9 @@ public class AppConfig {
     public LocalSessionFactoryBean getSessionFactory() {
         LocalSessionFactoryBean factoryBean = new LocalSessionFactoryBean();
         factoryBean.setDataSource(getDataSource());
-
         Properties props = new Properties();
         props.put("hibernate.show_sql", "true");
         props.put("hibernate.hbm2ddl.auto", "create-drop");
-
         factoryBean.setHibernateProperties(props);
         factoryBean.setAnnotatedClasses(User.class);
         return factoryBean;
