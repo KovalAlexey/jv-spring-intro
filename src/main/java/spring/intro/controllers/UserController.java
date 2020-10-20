@@ -22,15 +22,10 @@ public class UserController {
 
     @GetMapping("/inject")
     public void injectUsers() {
-        User bob = new User("Bob", 25);
-        User alex = new User("Alex", 24);
-        User alice = new User("Alice", 21);
-        User jesse = new User("Jesse", 18);
-
-        userService.add(bob);
-        userService.add(alex);
-        userService.add(alice);
-        userService.add(jesse);
+        userService.add(new User("Bob", 25));
+        userService.add(new User("Alex", 24));
+        userService.add(new User("Alice", 21));
+        userService.add(new User("Jesse", 18));
     }
 
     @GetMapping("/{userId}")
