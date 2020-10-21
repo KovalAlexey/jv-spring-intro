@@ -30,10 +30,7 @@ public class UserController {
 
     @GetMapping("/{userId}")
     public UserResponseDto getUserById(@PathVariable Long userId) {
-        Optional<User> user = userService.listUsers().stream()
-                .filter(userFromDb -> userFromDb.getId().equals(userId))
-                .findFirst();
-        return getUserDto(user.get());
+        return getUserDto(userService.getById(userId));
     }
 
     @GetMapping
